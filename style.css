@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Roboto+Mono&display=swap");
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark-blue);
+  /* max-width: 56rem; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  margin: 1rem;
+  width: 1000px;
+  height: 500px;
+}
+
+.card-header {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.quote {
+  font-size: 28px;
+  color: var(--light-cyan);
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.quote::before {
+  content: open-quote;
+}
+
+.quote::after {
+  content: close-quote;
+}
